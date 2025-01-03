@@ -12,12 +12,12 @@ const Map = () =>{
                             <h4>약도</h4>
                             <Link to = 'https://naver.me/xzxPIlyT'>
                                 <div className="map_naver">
-                                    <img src = '/images/naver.png'/>
+                                    <img src = '/images/naver.png' alt="네이버"/>
                                     <label>네이버 길찾기</label>
                                     </div>
                                 </Link><br/>
                         </div>
-                    <img src = '/images/map.png' className="map_img"/>
+                    <img src = '/images/map.png' className="map_img" alt="지도"/>
                     </div>
                     <div className="map_box">
                     <h4>대중교통</h4>
