@@ -1,0 +1,290 @@
+/* 홈 */
+.home_container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+  }
+  .slide_img{
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+  .slider-container{
+    text-align: center;
+    width: 70%;
+    z-index: -100;
+  }
+
+/* 협회장 소개 */
+  .pre_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+  }
+  .pre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 6%;
+  }
+
+  .pre_image img{
+    width: 60%;
+    height: auto;
+  }
+  .pre_text{
+    text-align: left;
+    width: 70%;
+    line-height: 150%;
+  }
+  .pre_text h4{
+    font-weight: 700;
+    margin-top: 0;
+  }
+  .pre_name{
+    width: 60%;
+    text-align: end;
+    margin-top: 2em;
+  }
+  .pre_name h4{
+    margin-bottom: 0.4em;
+  }
+  .pre_name label{
+    font-size: 0.9em;
+  }
+
+  /* 협회소개 */
+  .intro{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 2em;
+    text-align: left;
+  }
+  .intro_box{
+    width: 50%;
+    margin: 4em auto;
+    line-height: 180%;
+
+  }
+  .intro_box p{
+    margin: 0;
+  }
+  .intro_box h4{
+    margin-bottom: 0.35em;
+  }
+
+  /* 오시는 길 */
+  .map_container{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 2em;
+    flex-direction: column;
+  }
+  .map{
+    width: 100%;
+    text-align: left;
+  }
+  .map_img{
+    width: 100%;
+    height: auto;
+  }
+  .map_box h4,span{
+    margin-right: auto;
+  }
+  .map_link{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-right: auto;
+  }
+  .map_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  .map_transport{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #747F00;
+    padding: 0.5em 1.2em;
+    width: 6em;
+    gap:0.5em;
+    border-radius: 1.5em;
+    color: white;
+    font-weight: 700;
+    font-size: 0.8em;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .map_transport img, .map_naver img{
+    width: 2em;
+    height: auto;
+  }
+  .map_naver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 206, 96);
+    padding: 0.5em 1.2em;
+    width: fit-content;
+    gap:0.5em;
+    border-radius: 1.5em;
+    color: white;
+    font-weight: 700;
+    font-size: 0.8em;
+  }
+  .map_icons{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+  }
+  .map_links{
+    border: 2px solid #454545;
+    border-radius: 1em;
+    width: 9em;
+    text-align: center;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-weight: 600;
+  }
+  .map_links:hover{
+    font-weight: 800;
+  }
+
+  /* SIHF */
+.sihf_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin: 2em auto;
+}
+.sihf_box{
+  width: 45%;
+}  
+.sihf_img{
+  width: 50%;
+  height: auto;
+}
+.sihf_text{
+  text-align: left;
+  line-height: 180%;
+}
+
+
+/* Info */
+
+
+  /* 반응형 */
+  
+  @media (max-width: 480px) {
+    .slide_img{
+      width: 100%;
+  }
+  .slider-container{
+    width: 90%;}
+  .pre{
+    width: 90%;
+    flex-direction: column;
+    gap:2em;
+  }
+  .pre_image img{
+    width: 45%;
+  }
+  .pre_text{
+    width: 100%;
+  }
+  .pre_name{
+    width: 80%;
+  }
+  .intro_box{
+    width: 90%;
+  }
+  .map_container{
+    width: 90%;
+    padding-top: 0.5em;
+  }
+  .map_icons{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+  .map_links{
+    min-width: 25em;
+    padding: 0.6em 0;
+  }
+  .sihf_box{
+    width: 85%;
+  }  
+  .sihf_img{
+    width: 85%;
+    height: auto;
+  }
+  }
+  @media (max-width: 768px) and (min-width:480px) {
+    .slide_img{
+      width: 100%;
+  }
+  .slider-container{
+    width: 80%;}
+
+    .pre{
+      width: 80%;
+      flex-direction: column;
+      gap: 3em;
+    }
+    .pre_image img{
+      width: 45%;
+    }
+    .pre_text{
+      width: 100%;
+    }
+    .pre_name{
+      width: 80%;
+    }
+    .intro_box{
+      width: 80%;
+    }
+    .map_container{
+      width: 80%;
+      padding-top: 1em;
+    }
+    .map_icons{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      }
+      .map_links{
+        width: 40em;
+        padding: 0.6em 0;
+      }
+      .sihf_box{
+        width: 85%;
+      }  
+      .sihf_img{
+        width: 85%;
+        height: auto;
+      }
+  }
+
+
+
+  
