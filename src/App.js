@@ -7,7 +7,9 @@ import Intro from './pages/intro';
 import President from './pages/president';
 import Map from './pages/map';
 import SIHF from './pages/sihf';
-import Info from './pages/info';
+import Notice from './pages/notice';
+import Admin from './pages/admin';
+import NoticeDetail from './pages/noticeDetail';
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
         <Route path = '/intro/map' element = {<Map/>} />
         <Route path = '/intro/president' element = {<President/>} />
         <Route path = '/sihf' element = {<SIHF/>} />
-        <Route path = '/info' element = {<Info/>} />
+        <Route path = '/notice' element = {<Notice/>} />
+        <Route path = '/notice/:id' element = {<NoticeDetail/>} />
+        <Route path = '/admin' element = {<Admin/>} />
       </Routes>
       <Footer/>
     </div>

@@ -1,5 +1,5 @@
 import { useEffect, useState,useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Fade as Hamburger } from 'hamburger-react'
 
 
@@ -8,6 +8,7 @@ const Nav = () => {
     const [subOpen, setSubOpen] = useState(false);
     const [hideSubOpen, setHideSubOpen] = useState(false);
 
+    const location = useLocation(); // 현재 경로를 가져옵니다.
     const menuRef = useRef(null);
     
     const handleOutsideClick = (event) => {
@@ -53,7 +54,7 @@ const Nav = () => {
                             </li>
                             <li>
                                 <Link to='/intro/president' onClick={quitModal}>
-                                협회장 소개
+                                인사말
                                 </Link>
                             </li>
                             <li>
@@ -66,8 +67,8 @@ const Nav = () => {
                         )}
                     </li>
                     <li className="li" onClick={quitModal}><Link to='/sihf'>SIHF</Link></li>
-                    <li className="li" onClick={quitModal}><Link to='/info'>알림마당</Link></li>
-                    <li className="li" onClick={quitModal}><Link to='/resource'>자료마당</Link></li>
+                    <li className="li" onClick={quitModal}><Link to='/notice'>알림마당</Link></li>
+                    <li className="li" onClick={quitModal}><Link to='/question'>문의하기</Link></li>
                     </ul>
                 </div>
                 </div>
@@ -77,6 +78,7 @@ const Nav = () => {
             <div className="nav_menu">
                 <ul className="nav_menuls">
                 <li
+                style={{fontWeight: location.pathname === "/intro" ? "600" : "normal",}}
                 className="sub"
                 ref={menuRef}
                 onMouseEnter={() => setSubOpen(true)} 
@@ -87,16 +89,17 @@ const Nav = () => {
                     onMouseEnter={() => setSubOpen(true)} 
                     onMouseLeave={() => setSubOpen(false)} >
                     <ul className="nav_sub">
-                        <li><Link to = '/intro' onClick={() => setSubOpen(false)}>협회 소개</Link></li>
-                        <li><Link to = '/intro/president' onClick={() => setSubOpen(false)}>협회장 소개</Link></li>
+                        <li>
+                        <Link to = '/intro' onClick={() => setSubOpen(false)}>협회 소개</Link></li>
+                        <li><Link to = '/intro/president' onClick={() => setSubOpen(false)}>인사말</Link></li>
                         <li><Link to = '/intro/map' onClick={() => setSubOpen(false)}>오시는 길</Link></li>
                     </ul>
                     </div>
                     }
                 </li>
-                    <li><Link to='/sihf'>SIHF</Link></li>
-                    <li><Link to='/info'>알림마당</Link></li>
-                    <li><Link to='/resource'>자료마당</Link></li>
+                    <li style={{fontWeight: location.pathname === "/sihf" ? "600" : "normal",}}><Link to='/sihf'>SIHF</Link></li>
+                    <li style={{fontWeight: location.pathname === "/notice" ? "600" : "normal",}}><Link to='/notice'>알림마당</Link></li>
+                    <li style={{fontWeight: location.pathname === "/question" ? "600" : "normal",}}><Link to='/question'>문의하기</Link></li>
                 </ul>
             </div>
 

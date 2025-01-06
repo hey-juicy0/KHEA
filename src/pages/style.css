@@ -4,7 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3em;
+    margin-top: 1em;
+    min-height: 70vh;
   }
   .slide_img{
     width: auto;
@@ -190,7 +191,70 @@
 }
 
 
-/* Info */
+/* Notice */
+.notice{
+  margin-top: 3em;
+  min-height: 70vh;
+}
+.notice_table {
+  width: 50%; /* 테이블의 너비를 부모 요소에 맞게 100%로 설정 */
+  table-layout: fixed; /* 테이블 셀의 너비를 고정 */
+  border-collapse: collapse; /* 테이블 셀 간 경계선 겹침 방지 */
+  margin: auto;
+}
+
+.notice_table th, .notice_table td {
+  border: 1px solid #ddd; /* 경계선 */
+  padding: 0.7em;
+}
+
+.n-title{
+  text-align: left;
+  padding-left: 1em !important;
+}
+.n-date, .n-index{
+  font-size: 0.85em;
+}
+.th-num {
+  width: 7%; /* 번호 열 너비 */
+}
+
+.th-title {
+  width: 80%; /* 제목 열 너비 */
+}
+
+.th-date {
+  width: 12%; /* 날짜 열 너비 */
+  white-space: nowrap;
+}
+
+/* NoticeDetail */
+.detail{
+  margin-top: 3em;
+}
+.detail_box{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  width: 50%;
+  margin: 2em auto;
+  flex-direction: column;
+}
+.detail_box .content{
+  white-space: pre-wrap;
+  margin-top: 3em;
+}
+.detail_box .date{
+  font-weight: 400;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  margin-left: auto;
+}
+.detail_box .title{
+  font-weight: 700;
+  font-size: 1.15em;
+}
 
 
   /* 반응형 */
