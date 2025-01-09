@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 1em;
-    min-height: 70vh;
+    min-height: 75vh;
   }
   .slide_img{
     width: auto;
@@ -256,6 +256,21 @@
   font-size: 1.15em;
 }
 
+.question{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.question_forms{
+  margin-top: 3%;
+}
+
+
+
+
+
+
 
   /* 반응형 */
   
@@ -301,6 +316,9 @@
   .sihf_img{
     width: 85%;
     height: auto;
+  }
+  .question_forms iframe {
+    width: 100%;
   }
   }
   @media (max-width: 768px) and (min-width:480px) {

@@ -10,6 +10,7 @@ import SIHF from './pages/sihf';
 import Notice from './pages/notice';
 import Admin from './pages/admin';
 import NoticeDetail from './pages/noticeDetail';
+import Question from './pages/question';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path = '/notice' element = {<Notice/>} />
         <Route path = '/notice/:id' element = {<NoticeDetail/>} />
         <Route path = '/admin' element = {<Admin/>} />
+        <Route path = '/question' element = {<Question/>} />
       </Routes>
       <Footer/>
     </div>
