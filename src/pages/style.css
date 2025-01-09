@@ -261,6 +261,7 @@
   justify-content: center;
   align-items: center;
   white-space: nowrap;
+  min-height: 75vh;
 }
 .question_forms{
   margin-top: 3%;
